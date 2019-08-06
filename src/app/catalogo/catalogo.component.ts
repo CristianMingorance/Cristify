@@ -16,7 +16,11 @@ export class CatalogoComponent implements OnInit {
   constructor(public _data: DataService) {}
 
   vidControl = false; // Es true cuando pulsas el boton videoclip
-  catalogo = {}
+  catalogo = {grupo : "",
+  video : "",
+  titulo : ""}
+
+  
 
   addCatalogo(catalogo) {
 
@@ -33,7 +37,9 @@ export class CatalogoComponent implements OnInit {
 
     this.vidControl = false;
 
-    this.catalogo = {};
+    this.catalogo = {grupo : "",
+    video : "",
+    titulo : ""};
 
     return;
   }
